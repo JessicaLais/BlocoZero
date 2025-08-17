@@ -1,11 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes } from "./routes"
 
-function App() {
-  return( <h1>Teste</h1>
-  )
+export function App(){
+  return <Routes />
 }
-
-export default App
