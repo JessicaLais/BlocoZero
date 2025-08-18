@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --default-font-family:"Arial", Arial;
+  --color-blue-400: #607D8B;
+  --color-white-100: #F9F7F1;
+  --color-green-400: #7FAA79;
+  --color-green-350: #A1CF9F;
+}
