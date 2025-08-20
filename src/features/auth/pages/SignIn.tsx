@@ -1,4 +1,3 @@
-//import { useState } from 'react';
 import { useState } from 'react';
 import { Button } from '../components/Button';
 import { InputAuth } from '../components/InputAuth';
@@ -9,10 +8,24 @@ export function SignIn(){
     const [password, setPassword] = useState("")
     const [isLoading, setIsloading] = useState(false)
 
-    function onSubmit(e: React.FormEvent){
-        e.preventDefault()
-        console.log(email, password)
+   async function onSubmit(e: React.FormEvent){
+       e.preventDefault()
+    const response = await fetch('http://localhost:8080/login', {
+        method: 'POST',
+        headers: {  
+            'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            username: email,  
+            password,
+        })
+    })
+    const data = await response.json()
+    if(data.error){
+        alert(data.error)
+        return
     }
+    alert("Login realizado com sucesso!")
+}
     return(
         <div className="w-screen h-screen flex ">
             <div className="w-1/2 h-screen bg-blue-400 flex items-center justify-center">
