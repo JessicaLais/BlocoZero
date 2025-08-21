@@ -1,8 +1,8 @@
 //import { useState } from 'react';
 import { useState } from 'react';
-import { Button } from '../components/Button';
-import { InputAuth } from '../components/InputAuth';
-import { LogoAuth } from '../components/LogoAuth';
+import { Button } from '../features/auth/components/Button';
+import { InputAuth } from '../features/auth/components/InputAuth';
+import { LogoAuth } from '../features/auth/components/LogoAuth';
 
 export function SignUp(){
     const [name, setName] = useState("")
