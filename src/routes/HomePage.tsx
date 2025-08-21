@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router";
 import { AppLayout } from "../shared/AppLayout";
-import { Home } from "../features/auth/pages/Home";
+import { Home } from "../pages/Home";
 export function HomePage() {
     return(
         <Routes>
