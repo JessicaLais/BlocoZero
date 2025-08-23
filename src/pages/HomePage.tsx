@@ -14,7 +14,6 @@ interface Obra {
     endDate: string;
 }
 
-
 export function Home(){
     const [name, setName] = useState("")
     const [page, setPage] = useState(1)
@@ -70,7 +69,6 @@ export function Home(){
             onNext={() => handlePagination("next")}
             onPrevious={() => handlePagination("previous")}
             />
-
             </main>
         </div>
     )
