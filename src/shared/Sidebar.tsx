@@ -11,20 +11,20 @@ export function Sidebar() {
         </div>
 
       <nav className="flex flex-col gap-4">
-        <a href="/" className="flex items-center gap-3 p-2 bg-gray-600 rounded-md font-semibold ">
+        <a href="/" className="flex items-center gap-3 p-2 bg-gray-600 transition ease-linear rounded-md font-semibold ">
           <FaHome size={20} /> 
           <span>Início</span>
         </a>
 
-        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 rounded-md">
+        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 transition ease-linear rounded-md">
           <FaCalendarAlt size={20} /> 
           <span>Cronograma</span>
         </a>
-        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 rounded-md">
+        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 transition ease-linear rounded-md">
           <FaBox size={20} /> 
           <span>Estoque</span>
         </a>
-        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 rounded-md">
+        <a href="#" className="flex items-center gap-3 p-2 hover:bg-gray-600 transition ease-linear rounded-md">
           <FaChartBar size={20} /> 
           <span>Relatórios</span>
         </a>
