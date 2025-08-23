@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Button } from '../features/auth/components/Button';
 import { InputAuth } from '../features/auth/components/InputAuth';
 import { LogoAuth } from '../features/auth/components/LogoAuth';
+import { useNavigate } from "react-router"
 
 export function SignIn(){
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [isLoading, setIsloading] = useState(false)
-
+    const navigate = useNavigate()
    async function onSubmit(e: React.FormEvent){
        e.preventDefault()
     const response = await fetch('http://localhost:8080/login', {
@@ -24,7 +25,7 @@ export function SignIn(){
         alert(data.error)
         return
     }
-    alert("Login realizado com sucesso!")
+    navigate("/")
 }
     return(
         <div className="w-screen h-screen flex ">
